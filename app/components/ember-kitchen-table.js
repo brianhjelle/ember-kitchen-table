@@ -1,0 +1,1 @@
+export { default } from 'ember-kitchen-table/components/ember-kitchen-table';

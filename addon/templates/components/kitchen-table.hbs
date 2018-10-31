@@ -1,0 +1,8 @@
+{{#if (has-block)}}
+  {{yield 
+    (hash thead=(component "kitchen-thead") tbody=(component "kitchen-tbody"))
+  }}
+{{else}}
+  <KitchenThead></KitchenThead>
+  <KitchenTbody></KitchenTbody>
+{{/if}}

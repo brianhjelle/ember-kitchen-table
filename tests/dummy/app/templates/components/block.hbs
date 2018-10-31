@@ -1,0 +1,19 @@
+{{#docs-snippet name="block.hbs"}}
+  <EmberKitchenTable @data={{data}}>
+    <KitchenPrecisionInput></KitchenPrecisionInput>
+    <KitchenFilterBar></KitchenFilterBar>
+    <KitchenExportButton></KitchenExportButton>
+    <KitchenThead>
+      <KitchenColumn @fieldToSort={{"column1"}} rowspan="1" style="min-width: 76px;">Column One</KitchenColumn>
+      <KitchenColumn @fieldToSort={{"column2"}}>Column Two</KitchenColumn>
+    </KitchenThead>
+    <KitchenTbody @data={{data}}>
+      {{#each data as |row|}}
+        <tr>
+          <td>{{row.columnOne}}</td>
+          <td>{{row.columnTwo}}</td>
+        </tr>
+      {{/each}}
+    </KitchenTbody>
+  </EmberKitchenTable>
+{{/docs-snippet}}

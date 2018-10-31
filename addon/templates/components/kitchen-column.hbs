@@ -1,0 +1,6 @@
+<span onclick={{action "sort"}} class={{if canSort "touch-action" ""}}>
+  {{yield}}
+  {{#if canSort}}
+    {{fa-icon state}}
+  {{/if}}
+</span>

@@ -1,0 +1,23 @@
+{{#if (has-block)}}
+  {{yield 
+    (hash
+    filterBar=(component "kitchen-filter-bar")
+    exportButton=(component "kitchen-export-button")
+    precisionInput=(component "kitchen-precision-input")
+    kitchenTable=(compoennt "kitchen-table"))
+  }}
+{{else}}
+
+  {{#if @canControlDecimalPrecision}}
+    <KitchenPrecisionInput></KitchenPrecisionInput>
+  {{/if}}
+  {{#if @canFilter}}
+    <KitchenTableFilterBar></KitchenTableFilterBar>
+  {{/if}}
+  {{#if @canExport}}
+    <KitchenTableExportButton></KitchenTableExportButton>
+  {{/if}}
+
+  <KitchenTable></KitchenTable>
+
+{{/if}}

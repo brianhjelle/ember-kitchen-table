@@ -1,0 +1,25 @@
+{{#docs-demo as |demo|}}
+  {{#demo.example name="demo-non-block.hbs"}}
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <KitchenColumn>Column One</KitchenColumn>
+          <!--th>Column One</th-->
+          <th>Column Two</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Example Data 1</td>
+          <td>Example Data 2</td>
+        </tr>
+        <tr>
+          <td>Example Data 3</td>
+          <td> Example Data4</td>
+        </tr>
+      </tbody>
+    </table>
+  {{/demo.example}}
+
+  {{demo.snippet "demo-non-block.hbs"}}
+{{/docs-demo}}
