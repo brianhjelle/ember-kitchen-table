@@ -4,6 +4,14 @@ const EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
 
 module.exports = function(defaults) {
   let app = new EmberAddon(defaults, {
+    options: {
+      babel: {
+        plugins: ['transform-object-rest-spread']
+      }
+    },
+    'ember-cli-babel': {
+      includePolyfill: true
+    },
     favicons: {
       faviconsConfig: {
         // these options are passed directly to the favicons module

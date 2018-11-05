@@ -655,45 +655,45 @@
     ember-cli-babel-plugin-helpers "^1.0.0"
     ember-cli-version-checker "^2.1.0"
 
-"@ember-decorators/component@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@ember-decorators/component/-/component-3.0.0.tgz#9f31cc4eac800bedebf69ef8e432519092cd0430"
+"@ember-decorators/component@^2.5.2":
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/@ember-decorators/component/-/component-2.5.2.tgz#54ceb0edbf8cc089b25174897639c5704532274f"
   dependencies:
-    "@ember-decorators/utils" "^3.0.0"
+    "@ember-decorators/utils" "^2.5.2"
     ember-cli-babel "^6.6.0"
 
-"@ember-decorators/controller@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@ember-decorators/controller/-/controller-3.0.0.tgz#1f5b0e88f7456bc869775f70cd86a56cb690f301"
+"@ember-decorators/controller@^2.5.2":
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/@ember-decorators/controller/-/controller-2.5.2.tgz#f74a537ba79d966b5bb1402f6407692c849ef9db"
   dependencies:
-    "@ember-decorators/utils" "^3.0.0"
+    "@ember-decorators/utils" "^2.5.2"
     ember-cli-babel "^6.6.0"
 
-"@ember-decorators/data@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@ember-decorators/data/-/data-3.0.0.tgz#78c6cb8b9b14eeee4bfd265cd00c95dc09416420"
+"@ember-decorators/data@^2.5.2":
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/@ember-decorators/data/-/data-2.5.2.tgz#11411ccf2b94437ab3a6a23077cd39bd990ab334"
   dependencies:
-    "@ember-decorators/utils" "^3.0.0"
+    "@ember-decorators/utils" "^2.5.2"
     ember-cli-babel "^6.6.0"
 
-"@ember-decorators/object@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@ember-decorators/object/-/object-3.0.0.tgz#84c5d3e62d3b211ffd17a795c0c4a65c3fe52f8d"
+"@ember-decorators/object@^2.5.2":
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/@ember-decorators/object/-/object-2.5.2.tgz#3f0d238212da13bda94a129964b47387ed90054c"
   dependencies:
-    "@ember-decorators/utils" "^3.0.0"
+    "@ember-decorators/utils" "^2.5.2"
     ember-cli-babel "^6.6.0"
     ember-compatibility-helpers "^1.0.0"
 
-"@ember-decorators/service@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@ember-decorators/service/-/service-3.0.0.tgz#90fe410b8b2b80ad7227a85259e3a8c3852000a2"
+"@ember-decorators/service@^2.5.2":
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/@ember-decorators/service/-/service-2.5.2.tgz#0ec93ca10f5e8baa8d93364c794de23a526e8493"
   dependencies:
-    "@ember-decorators/utils" "^3.0.0"
+    "@ember-decorators/utils" "^2.5.2"
     ember-cli-babel "^6.6.0"
 
-"@ember-decorators/utils@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@ember-decorators/utils/-/utils-3.0.0.tgz#f8e82ead2c75a8eaf2cef5b1811ab54fcb28bcee"
+"@ember-decorators/utils@^2.5.2":
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/@ember-decorators/utils/-/utils-2.5.2.tgz#656f30f099de597a8ccdd4cece390728930d37d3"
   dependencies:
     babel-plugin-debug-macros "^0.1.11"
     ember-cli-babel "^6.6.0"
@@ -4171,15 +4171,15 @@ ember-copy@^1.0.0:
     semver "^5.5.0"
     silent-error "^1.1.0"
 
-ember-decorators@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/ember-decorators/-/ember-decorators-3.0.0.tgz#23cee0ebea3f86806cd15b638bf5ffb40870ccf4"
+ember-decorators@^2.5.2:
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/ember-decorators/-/ember-decorators-2.5.2.tgz#6d69c48d86df5f90c3d540486681c08a33256196"
   dependencies:
-    "@ember-decorators/component" "^3.0.0"
-    "@ember-decorators/controller" "^3.0.0"
-    "@ember-decorators/data" "^3.0.0"
-    "@ember-decorators/object" "^3.0.0"
-    "@ember-decorators/service" "^3.0.0"
+    "@ember-decorators/component" "^2.5.2"
+    "@ember-decorators/controller" "^2.5.2"
+    "@ember-decorators/data" "^2.5.2"
+    "@ember-decorators/object" "^2.5.2"
+    "@ember-decorators/service" "^2.5.2"
     ember-cli-babel "^6.0.0"
     semver "^5.5.0"
 
@@ -4601,7 +4601,7 @@ esdoc-ecmascript-proposal-plugin@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/esdoc-ecmascript-proposal-plugin/-/esdoc-ecmascript-proposal-plugin-1.0.0.tgz#390dc5656ba8a2830e39dba3570d79138df2ffd9"
 
-"esdoc@github:pzuraq/esdoc#015a342":
+esdoc@pzuraq/esdoc#015a342:
   version "1.0.4"
   resolved "https://codeload.github.com/pzuraq/esdoc/tar.gz/015a3426b2e53b2b0270a9c00133780db3f1d144"
   dependencies:

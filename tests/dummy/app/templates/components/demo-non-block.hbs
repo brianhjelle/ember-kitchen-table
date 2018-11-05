@@ -1,24 +1,25 @@
 {{#docs-demo as |demo|}}
   {{#demo.example name="demo-non-block.hbs"}}
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <KitchenColumn>Column One</KitchenColumn>
-          <!--th>Column One</th-->
-          <th>Column Two</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Example Data 1</td>
-          <td>Example Data 2</td>
-        </tr>
-        <tr>
-          <td>Example Data 3</td>
-          <td> Example Data4</td>
-        </tr>
-      </tbody>
-    </table>
+    <EmberKitchenTable as |kitchen|>
+      <kitchen.table class="table table-bordered">
+        <KitchenThead @isSticky={{true}}>
+          <tr>
+            <KitchenColumn @fieldToSort={{"col1"}}>Column One</KitchenColumn>
+            <KitchenColumn @fieldToSort={{"col2"}}>Column Two</KitchenColumn>
+          </tr>
+        </KitchenThead>
+        <KitchenTbody>
+          <tr>
+            <td>Example Data 1</td>
+            <td>Example Data 2</td>
+          </tr>
+          <tr>
+            <td>Example Data 3</td>
+            <td>Example Data 4</td>
+          </tr>
+        </KitchenTbody>
+      </kitchen.table>
+    </EmberKitchenTable>
   {{/demo.example}}
 
   {{demo.snippet "demo-non-block.hbs"}}
