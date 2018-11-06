@@ -8,7 +8,7 @@ export default class EmberKitchenTableComponent extends Component {
   @service tableData
 
   didReceiveAttrs() {
-    super.didReceiveAttrs(...arguments);
+    this._super(...arguments);
     this.tableData.setData(this.data, this.cols);
   }
 }
