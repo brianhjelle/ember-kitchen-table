@@ -1,1 +1,9 @@
+{{#each data as |row|}}
+  <tr>
+    {{#each cols as |col|}}
+      <td>{{get row col.field}}</td>
+    {{/each}}
+  </tr>
+{{/each}}
+
 {{yield}}

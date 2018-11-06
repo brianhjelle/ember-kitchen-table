@@ -2,8 +2,8 @@
   {{yield (hash thead=(component "kitchen-column"))}}
 {{else}}
   <tr>
-    {{#each @columns as |col|}}
-      <KitchenColumn @col={{col}}></KitchenColumn>
+    {{#each @cols as |col|}}
+      <KitchenColumn @fieldToSort={{col.field}}>{{col.displayName}}</KitchenColumn>
     {{/each}}
   </tr>
 {{/if}}

@@ -3,6 +3,6 @@
     (hash thead=(component "kitchen-thead") tbody=(component "kitchen-tbody"))
   }}
 {{else}}
-  <KitchenThead></KitchenThead>
-  <KitchenTbody></KitchenTbody>
+  <KitchenThead @cols={{cols}} />
+  <KitchenTbody @cols={{cols}} @data={{data}} />
 {{/if}}
