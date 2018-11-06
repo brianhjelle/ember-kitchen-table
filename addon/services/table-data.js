@@ -37,6 +37,14 @@ export default class TableDataService extends Service {
     this.set('cols', cols);
   }
 
+  getRows() {
+    return this.rows;
+  }
+
+  getCols() {
+    return this.cols;
+  }
+
   _sort(sortState, data) {
     // const sortTermKey = Object.keys(sortState)[0];
     // const sortTermString = sortTermKey + ':' + sortState[sortTermKey];
@@ -70,7 +78,6 @@ export default class TableDataService extends Service {
   }
 
   filter(newFilterString) {
-    debugger;
     const rows = this._getDataSetToFilterThrough(this.filterString, newFilterString);
     // For each row, check if there are any cell values that match the newFilterString
     const filterResults = rows.filter(row => {
