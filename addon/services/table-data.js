@@ -77,7 +77,8 @@ export default class TableDataService extends Service {
     return this.originalData;
   }
 
-  filter(newFilterString) {
+  filter(newFilter) {
+    const newFilterString = newFilter.toString().toLowerCase();
     const rows = this._getDataSetToFilterThrough(this.filterString, newFilterString);
     // For each row, check if there are any cell values that match the newFilterString
     const filterResults = rows.filter(row => {

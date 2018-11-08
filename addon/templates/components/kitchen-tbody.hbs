@@ -1,7 +1,7 @@
 {{#each rows as |row|}}
   <tr>
     {{#each cols as |col|}}
-      <td>{{col.field}}{{row}}{{get row col.field}}</td>
+      <td>{{get row col.field}}</td>
     {{/each}}
   </tr>
 {{/each}}
