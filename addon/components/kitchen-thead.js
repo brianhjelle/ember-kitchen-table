@@ -13,7 +13,7 @@ export default class KitchenTheadComponent extends Component {
 
   @service tableData
 
-  @computed('tableData.getCols')
+  @computed('tableData.cols')
   get cols() {
     return this.tableData.getCols();
   }

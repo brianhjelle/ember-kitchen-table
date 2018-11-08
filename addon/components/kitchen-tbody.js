@@ -10,12 +10,12 @@ export default class KitchenTbodyComponent extends Component {
 
   @service tableData
 
-  @computed('tableData.getCols')
+  @computed('tableData.cols')
   get cols() {
     return this.tableData.getCols();
   }
 
-  @computed('tableData.getRows')
+  @computed('tableData.rows')
   get rows() {
     return this.tableData.getRows();
   }
